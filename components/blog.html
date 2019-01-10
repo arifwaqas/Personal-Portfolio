@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="../../../../favicon.ico">
     <link rel="stylesheet" href="../styles/app.css">
-    <title>Starter Template for Bootstrap</title>
+    <title>Arif Waqas - Blog</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
@@ -19,25 +19,23 @@
 
     <nav class="navbar navbar-expand-md fixed-top">
       <a class="navbar-brand font-weight-bold" href="#">Arif Waqas</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fas fa-bars">   
-            </span>
-      </button>
+      <button class="navbar-toggler" onclick="toggleNav()" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="myBtn" class="fas fa-bars">  
+          </span>
+    </button>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"><span>Home</span> <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="../index.html"><span>Home</span> <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#"><span>Blog</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><span>Projects</span></a>
+            <a class="nav-link" href="projects.html"><span>Projects</span></a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#"><span>About me</span></a>
-          </li>
+         
         </ul>
       </div>
     </nav>
@@ -45,13 +43,14 @@
     <main role="main" class="container-fluid">
     <section class="showcase container-fluid">
      <div class="codebg-wrapper">
-        <div class="codebg">
+        <div class="codebg" id="blogbg">
           <div class="content">
             <div class="content-top">
               <div class="header-text">
                   <h2 class="intro-1">Welcome <span>,</span> </h2><h2 class="intro-2">to my<br>blog<span>.</span></h2>  
               </div><!--/.header-text-->
-                  <div class="picture"></div>
+                  <div class="picture article-st"></div>
+                 <!-- <p class="sub-3">I like to write, sometimes<span>.</span></p>-->
             </div> 
           </div>
         </div> 
@@ -60,10 +59,10 @@
     <section class="blog">
       <div class="blog-wrapper">
         <div class="blog-intro">
-          <h2>Welcome to my universe<span>!</span></h2>
+          <h2>Arifsonit.<span></span></h2>
           <div class="hrln"><hr> </div> 
           <div class="intro-para">
-          <p>Being raised and having lived nearly eighteen years of my life in the middle east and about a couple of years in South East Asia, I believe the internet is the best platform to spill the ink of my mind. I write sometimes to kill both time and boredom, but the topics are mostly out of the blue something that might have caught my attention lately or a post from somewhere else that I liked a lot and though maybe I should share with you guys. Well there you go, a blog of my own. Happy reading<span>!</span> </p>  
+          <p>I have a belief the internet is the best platform to spill the ink of my mind. I write sometimes to kill both time and boredom, but the topics are mostly out of the blue something that might have caught my attention lately or a post from somewhere else that I liked a lot. Well there you go, a blog of my own. Happy reading. </p>  
           <div class="hrln"><hr> </div> 
         </div>
         </div>
@@ -72,31 +71,31 @@
                 <div class="col-md-12">
                   <div class="card flex-md-row mb-4 box-shadow h-md-250">
                     <div class="card-body d-flex flex-column align-items-start">
-                      <strong class="d-inline-block mb-2 text-bl">World</strong>
+                      <strong class="d-inline-block mb-2 text-bl">Web Development</strong>
                       <h3 class="mb-0">
-                        <a class="text-dark" href="#">Featured post</a>
+                        <a class="text-dark" href="../components/what-is-Git.html">What is Git?</a>
                       </h3>
-                      <div class="mb-1 text-muted">Nov 12</div>
-                      <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#">Continue reading</a>
+                      <div class="mb-1 text-muted">Jan 12,2019</div>
+                      <p class="card-text mb-auto">Everything you need to know about Git. Git is a version-control system for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for source-code management in software as well as web development.</p>
+                      <a href="/components/what-is-Git.html">Continue reading</a>
                     </div>
-                    <img class="card-img-right flex-auto d-none d-md-block" src="/img/bp-1.jpg" style="height:250px;" alt="Card image cap">
+                    <img class="card-img-right flex-auto d-none d-md-block" src="/img/article 1.jpg" style="height:250px;" alt="Card image cap">
                   </div>
                 </div>
               </div>
-              <div class="row mb-2">
+              <!--<div class="row mb-2">
                   <div class="col-md-6">
                     <div class="card flex-md-row mb-4 box-shadow h-md-250">
                       <div class="card-body d-flex flex-column align-items-start">
-                        <strong class="d-inline-block mb-2 text-bl">World</strong>
+                        <strong class="d-inline-block mb-2 text-bl">Web Development</strong>
                         <h3 class="mb-0">
-                          <a class="text-dark" href="#">Featured post</a>
+                          <a class="text-dark" href="#">What is Git?</a>
                         </h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="mb-1 text-muted">January 5,2019</div>
+                        <p class="card-text mb-auto"></p>
                         <a href="#">Continue reading</a>
                       </div>
-                      <img class="card-img-right flex-auto d-none d-md-block" src="/img/bp-1.jpg" style="height:250px;" alt="Card image cap">
+                      <img class="card-img-right flex-auto d-none d-md-block" src="/img/article 1.jpg" style="height:250px;" alt="Card image cap">
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -113,7 +112,7 @@
                       <img class="card-img-right flex-auto d-none d-md-block" src="/img/bp-1.jpg" style="height:250px;" alt="Card image cap">
                     </div>
                   </div>
-                </div>
+                </div>-->
               </div>
        <div class="hrln"><hr> </div>  </div>
       
@@ -127,7 +126,25 @@
     </footer>
 
     
-
+    <script>
+        let navStatus=false;
+        function toggleNav(){
+          if(navStatus===false){
+            navStatus=true;
+            document.getElementById('myBtn').style.color= '#c70039';
+          }
+          else{
+            navStatus = false;
+            document.getElementById('myBtn').style.color = '#505050';
+          }
+        }
+     function openSlideMenu(){
+        
+      }
+      function closeSlideMenu(){     
+        
+      }
+      </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

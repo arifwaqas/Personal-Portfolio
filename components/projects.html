@@ -12,7 +12,7 @@
     />
     <link rel="icon" href="../../../../favicon.ico" />
     <link rel="stylesheet" href="../styles/app.css" />
-    <title>Starter Template for Bootstrap</title>
+    <title>Arif Waqas - Projects</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -42,81 +42,69 @@
   <body>
     <nav class="navbar navbar-expand-md fixed-top">
       <a class="navbar-brand font-weight-bold" href="#">Arif Waqas</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="fas fa-bars"> </span>
-      </button>
+      <button class="navbar-toggler" onclick="toggleNav()" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="myBtn" class="fas fa-bars">  
+          </span>
+    </button>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="../index.html"
               ><span>Home</span> <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><span>Blog</span></a>
+            <a class="nav-link" href="blog.html"><span>Blog</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#"><span>Projects</span></a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#"><span>About me</span></a>
-          </li>
+         
         </ul>
       </div>
     </nav>
 
     <main role="main" class="container-fluid">
-      <section class="showcase container-fluid">
-        <div class="codebg-wrapper">
-          <div class="codebg">
-            <div class="overlay"></div>
-            <div class="content">
-              <div class="content-top">
-                <div class="header-text article-fn">
-                  <h2 class="intro-1">Welcome <span>,</span></h2>
-                  <h2 class="intro-2">to my<br />blog<span>.</span></h2>
-                </div>
-                <!--/.header-text-->
-                <h2 class="article-title">
-                  where i spend most of my time <span>&</span> tide<span
-                    >.</span
-                  >
-                </h2>
-                <div class="picture article-fn"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <section class="showcase container-fluid">
+            <div class="codebg-wrapper">
+               <div class="codebg" id="projbg">
+                 <div class="content">
+                   <div class="content-top">
+                     <div class="header-text">
+                         <h2 class="intro-1">My Projects<span>,</span> </h2><h3>Where I spend most of my</h3><h2>time <span>&</span> tide<span>.</span></h2> 
+                     </div><!--/.header-text-->
+                         <div class="picture article-st"></div>
+                        <!-- <p class="sub-3">I like to write, sometimes<span>.</span></p>-->
+                   </div> 
+                 </div>
+               </div> 
+            </div> 
+           </section> 
       <section class="projects">
         <div class="projects-wrapper">
           <div class="projects-heading expertise expertise-sub">
             <h2>My Projects<span>.</span></h2>
-            <hr />
+            <div class="hrln"><hr> </div> 
+            <div class="intro-para">
+                <P>Atleast my portfolio is not empty anymore. I have several visions and projects ahead of me already. As programmers, we never stop learning. Wisdom is infinite. Recently firebase, flutter, golang and typescript have been catching my attention. But it would be really underestimating to say, I enjoyed this phase of the journey. Keep learning, keep growing. Feel free to find the open sourced projects of mine and play around with it. :)</P>
+              <div class="hrln"><hr> </div> 
+                </div>
           </div>
                 <div class="blog-posts">
                         <div class="row mb-2">
                             <div class="col-md-12">
                               <div class="card flex-md-row mb-4 box-shadow h-md-250">
                                 <div class="card-body d-flex flex-column align-items-start">
-                                  <strong class="d-inline-block mb-2 text-bl">World</strong>
+                                  <strong class="d-inline-block mb-2 text-bl">Project 'Uno'</strong>
                                   <h3 class="mb-0">
-                                    <a class="text-dark" href="#">Featured post</a>
+                                    <a class="text-dark" href="http://www.arifwaqas.xyz">www.arifwaqas.xyz</a>
                                   </h3>
-                                  <div class="mb-1 text-muted">Nov 12</div>
-                                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                                  <a href="#">Continue reading</a>
+                                  <div class="mb-1 text-muted">January 10, 2019</div>
+                                  <p class="card-text mb-auto">From barebones html to a responsive full fledge static website. Started off with basic html and css, my main focus was bootstrap and minimalistic UI. But on my path to learning these frameworks, I encountered several other aspects of web development and production such as routing,sass, less, yarn, adobe xd, javascript, flexbox, and css grid.</p>
+                                  
                                 </div>
-                                <img class="card-img-right flex-auto d-none d-md-block" src="/img/bp-1.jpg" style="height:250px;" alt="Card image cap">
+                                <img class="card-img-right flex-auto d-none d-md-block" src="/img/proj-art-1.PNG" style="height:250px;" alt="Card image cap">
                               </div>
                             </div>
                           </div>
@@ -145,6 +133,25 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
+    <script>
+        let navStatus=false;
+        function toggleNav(){
+          if(navStatus===false){
+            navStatus=true;
+            document.getElementById('myBtn').style.color= '#c70039';
+          }
+          else{
+            navStatus = false;
+            document.getElementById('myBtn').style.color = '#505050';
+          }
+        }
+     function openSlideMenu(){
+        
+      }
+      function closeSlideMenu(){     
+        
+      }
+      </script>
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"

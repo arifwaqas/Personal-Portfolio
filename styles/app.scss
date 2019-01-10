@@ -2,6 +2,11 @@ $blue: #c70039;
 $grey: #505050;
 $white: #f4f4f4;
 
+#myBtn {
+  color: $grey;
+  text-decoration: none;
+}
+
 .navbar-brand:hover {
   color: $blue;
 }
@@ -109,7 +114,6 @@ nav a:hover span {
 }
 
 .navbar button span {
-  color: white;
   font-size: 25px;
 }
 main.container-fluid {
@@ -169,6 +173,15 @@ footer p {
   }
   .social ul li {
     margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-item {
+    padding: 20px 0;
+  }
+  .nav-item a {
+    text-align: center;
   }
 }
 
@@ -239,12 +252,26 @@ footer p {
   width: 100%;
   text-align: center;
 }
-
+.article-st {
+  visibility: hidden;
+}
+#art-1 {
+  background-image: url(../img/art-1-cover.jpg);
+}
 .header-text h2 {
   color: $white;
   line-height: 1.2em;
   letter-spacing: 0.05em;
   z-index: 200;
+}
+.header-text h3 {
+  color: $white;
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  letter-spacing: 0.05em;
 }
 .header-text.article-fn {
   display: none;
@@ -259,7 +286,12 @@ footer p {
   font-size: 23px;
   padding-top: 20px;
 }
-
+#projbg {
+  background-image: url(../img/cover.jpg);
+}
+#blogbg {
+  background-image: url(../img/blog-cover.jpg);
+}
 .sub-3 span {
   font-size: 25px;
   font-weight: 500;
@@ -279,7 +311,7 @@ footer p {
 }
 
 .article-title {
-  padding: 200px 0;
+  padding: 150px 0;
   color: #f4f4f4;
 }
 
@@ -292,6 +324,10 @@ footer p {
 .article-title span {
   font-size: 60px;
 }
+.article-title {
+  font-size: 10px;
+  line-height: 15px;
+}
 
 .exp i {
   font-size: 70px;
@@ -300,12 +336,13 @@ footer p {
   color: $grey;
 }
 .round-box {
-  border: 5px solid $blue;
+  border: 5px solid $grey;
   border-radius: 50%;
   height: 140px;
   width: 140px;
   margin: 35px auto 0 auto;
 }
+
 .expertise {
   font-family: "Poppins";
   padding: 10px 15% 0 15%;
@@ -326,6 +363,7 @@ footer p {
   align-self: center;
   list-style-type: none;
   display: flex;
+  flex-direction: column;
   padding: 15px 20%;
   width: 100%;
   flex-wrap: nowrap;
@@ -334,9 +372,8 @@ footer p {
 .exp-items li {
   //border: 2px solid $grey;
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
   padding: 7% 0 0 7%; //smaller icons
+  text-align: center;
 }
 .exp-items li i {
   font-size: 30px;
@@ -361,7 +398,7 @@ footer p {
   text-align: center;
   font-family: "Poppins";
   padding-top: 25px;
-  letter-spacing: 0.07em;
+  font-size: 24px;
 }
 
 .expertise span {
@@ -375,7 +412,7 @@ footer p {
 }
 .intro-para {
   padding: 0 10%;
-  text-align: justify;
+  text-align: center;
 }
 .blog-posts {
   padding: 0 15%;
@@ -385,4 +422,26 @@ footer p {
 }
 .projects-wrapper {
   padding-top: 20px;
+}
+
+//scrollbar
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $grey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $blue;
 }
