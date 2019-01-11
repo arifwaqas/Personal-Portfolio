@@ -410,6 +410,23 @@ footer p {
   font-family: "Montserrat", sans-serif;
   line-height: 25px;
 }
+@media screen and (max-width: 700px) {
+  .expertise-sub {
+    padding: 10px 5%;
+  }
+  .expertise {
+    padding: 10px 10% 0 10%;
+  }
+  .row {
+    padding-left: 0;
+  }
+  .blog-intro {
+    padding: 10px 5%;
+  }
+  .blog-posts {
+    padding: 10px 5%;
+  }
+}
 .intro-para {
   padding: 0 10%;
   text-align: center;
