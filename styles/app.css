@@ -4,7 +4,7 @@
 }
 
 .navbar-brand:hover {
-  color: #c70039;
+  color: #ff8c00;
 }
 
 .blog-intro {
@@ -13,7 +13,7 @@
 }
 
 .blog-intro span {
-  color: #c70039;
+  color: #ff8c00;
   font-family: "Poppins";
   font-weight: 500;
 }
@@ -82,16 +82,16 @@ nav a {
 }
 
 nav a:hover span {
-  color: #c70039;
+  color: #ff8c00;
   border-bottom: 3px solid currentColor;
 }
 
 .nav-item.active a:focus span {
-  color: #c70039;
+  color: #ff8c00;
 }
 
 .nav-item.active a span {
-  color: #c70039;
+  color: #ff8c00;
   border-bottom: 3px solid currentColor;
 }
 
@@ -114,7 +114,7 @@ nav a:hover span {
 }
 
 .showcase span {
-  color: #c70039;
+  color: #ff8c00;
   font-size: 45px;
   font-family: "Poppins", sans-serif;
 }
@@ -137,11 +137,11 @@ main section.showcase {
 }
 
 .fas.fa-bars:focus {
-  color: #c70039;
+  color: #ff8c00;
 }
 
 .fas.fa-bars:hover {
-  color: #c70039;
+  color: #ff8c00;
 }
 
 footer {
@@ -160,7 +160,7 @@ footer p {
 }
 
 .btn-secondary:hover {
-  color: #c70039;
+  color: #ff8c00;
 }
 
 .btn-read-more {
@@ -260,7 +260,7 @@ footer p {
 }
 
 .social ul li a:before {
-  background: #c70039;
+  background: #ff8c00;
 }
 
 .codebg {
@@ -335,7 +335,7 @@ footer p {
   background-image: url(../img/me.jpg);
   background-size: 100%;
   border-radius: 50%;
-  border: 5px #c70039 solid;
+  border: 5px #ff8c00 solid;
 }
 
 .picture.article-fn {
@@ -439,7 +439,7 @@ footer p {
 }
 
 #pencil-i {
-  padding-left: 5%;
+  padding-left: 2%;
 }
 
 .expertise-sub h2 {
@@ -451,7 +451,7 @@ footer p {
 }
 
 .expertise span {
-  color: #c70039;
+  color: #ff8c00;
 }
 
 .expertise-sub {
@@ -477,6 +477,9 @@ footer p {
   .blog-posts {
     padding: 10px 5%;
   }
+  .text-dark {
+    font-size: 15px;
+  }
 }
 
 .intro-para {
@@ -489,7 +492,7 @@ footer p {
 }
 
 .text-bl {
-  color: #c70039;
+  color: #ff8c00;
 }
 
 .projects-wrapper {
@@ -513,6 +516,6 @@ footer p {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c70039;
+  background: #ff8c00;
 }
 /*# sourceMappingURL=app.css.map */

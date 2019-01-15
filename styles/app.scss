@@ -1,4 +1,4 @@
-$blue: #c70039;
+$blue: #ff8c00;
 $grey: #505050;
 $white: #f4f4f4;
 
@@ -391,7 +391,7 @@ footer p {
   padding-left: 5%;
 }
 #pencil-i {
-  padding-left: 5%;
+  padding-left: 2%;
 }
 .expertise-sub h2 {
   color: $grey;
@@ -425,6 +425,9 @@ footer p {
   }
   .blog-posts {
     padding: 10px 5%;
+  }
+  .text-dark {
+    font-size: 15px;
   }
 }
 .intro-para {
